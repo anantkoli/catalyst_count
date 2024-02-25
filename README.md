@@ -32,14 +32,14 @@
     - windows, macOS > ``` docker ps -a ```
     - Linux > ``` sudo docker ps -a ```
 
-7.  Now install the requirements using below command
-    ``` pip install -r requirements ```
+7.  Now install the requirements using below command make sure you installed python if not use [this link](https://www.javatpoint.com/how-to-install-python)
+    - ``` pip install -r requirements ```
 
 8.  Now need to migrate the changes using following commands
     - ``` python manage.py makemigrations ```
     - ``` python manage.py migrate ```
 
 9.  Now run the server using command
-    ``` python manage.py runserver ```
+    - ``` python manage.py runserver ```
 
 10.	Now your app is running **successfully**
