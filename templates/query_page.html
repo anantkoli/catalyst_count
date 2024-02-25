@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <h2>
+            Query Builder
+        </h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <input type='text' placeholder='keyword' id='keyword' name='keyword' class='form-control' />
+            </div>
+            <div>
+                <select class="selectpicker" multiple title="Industry">
+                <option>accounting</option>
+                </select>
+            </div>
+            <div>
+                <select class="selectpicker" multiple title="Year Founded"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <select class="selectpicker" multiple title="City">
+                <option>New York</option>
+                </select>
+            </div>
+            <div>
+                <select class="selectpicker" multiple title="State"></select>
+            </div>
+            <div>
+                <select class="selectpicker" multiple title="Country"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <select class="selectpicker" multiple title="Employee(From)"></select>
+            </div>
+            <div>
+                <select class="selectpicker" multiple title="Employee(To)"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

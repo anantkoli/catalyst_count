@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<main>
+    <div class="col-lg-6 col-md-6" style="margin: 0 auto; display: block; margin-top: 100px;">
+        <form enctype="multipart/form-data" method="POST" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Select file to upload.</label>
+                <input type="file" class="form-control" id="fileupload" placeholder="Select file">
+            </div>
+            <input type="submit" value="Upload" id="submit" class="btn btn-success">
+        </form>
+        <div id="uploaded_files">
+        </div>
+    </div>
+</main>
+{% endif %}
+{% endblock content %}
