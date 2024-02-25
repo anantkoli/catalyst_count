@@ -23,7 +23,7 @@
     cd <checked_path>/catalyst_count
     ```
 
-5.	Run docker command on the terminal. Make sure you are inside the project folder. Wait till it build and running.
+5.	Run docker command on the terminal. Make sure you are inside the project folder. Wait till it builds and runs.
     ```
     docker-compose up -d
     ```
@@ -32,14 +32,16 @@
     - windows, macOS > ``` docker ps -a ```
     - Linux > ``` sudo docker ps -a ```
 
-7.  Now install the requirements using below command make sure you installed python if not use [this link](https://www.javatpoint.com/how-to-install-python)
+7.  Now install the requirements using the below command make sure you installed Python if not use [this link](https://www.javatpoint.com/how-to-install-python)
     - ``` pip install -r requirements ```
 
-8.  Now need to migrate the changes using following commands
+8.  Now, we need to migrate the changes using the following commands
     - ``` python manage.py makemigrations ```
     - ``` python manage.py migrate ```
 
-9.  Now run the server using command
+9.  Now run the server using the command
     - ``` python manage.py runserver ```
 
 10.	Now your app is running **successfully**
+
+11.	Go to the browser and search for (http://127.0.0.1:8000/) to login and try the application.
